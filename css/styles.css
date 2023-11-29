@@ -42,6 +42,9 @@ ol,
 a {
     list-style-type: none;
     text-decoration: none;
+    margin: 0;
+    padding-left: 0;
+    font-style: normal;
 }
 
 h1,
@@ -77,16 +80,6 @@ button {
     overflow: hidden;
 }
 
-.list {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-.link {
-    text-decoration: none;
-    font-style: normal;
-}
 
 .header {
     border-bottom: 1px solid var(--accent-color);
