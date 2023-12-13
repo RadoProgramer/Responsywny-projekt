@@ -371,7 +371,7 @@ button {
 .btn-subscribe:focus {
     background-color: var(--pressed-state-color);
 }
-.section-mobile {
+.section-order {
     background-color: var(--dark-color);
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
@@ -390,7 +390,7 @@ button {
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-      .section-studio-one {
+      .section-order {
           background-image: linear-gradient(to bottom,
                   rgba(46, 47, 66, 0.7),
                   rgba(46, 47, 66, 0.7)),
@@ -477,7 +477,7 @@ button {
            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
-   .close-button-icon {
+   .modal-svg {
        fill: currentColor;
        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
@@ -1016,11 +1016,7 @@ button {
 
 
 
-    .order-section {
-        height: 436px;
-        padding: 112px 0;
-    }
-    .section-studio-one {
+    .section-order{
         height: 436px;
         padding: 112px 0;
     }
@@ -1096,4 +1092,157 @@ button {
     .portfolio-item {
         max-width: 356px;
     }
+}
+
+
+/* computer screen styles */
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+    .section {
+        padding: 120px 0;
+    }
+    .header-responsiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-container {
+        display: none;
+    }
+    .nav {
+        padding: 0;
+    }
+    .address-list {
+        font-style: normal;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .contact-list {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        display: inline;
+        margin: 24px 0;
+    }
+
+
+    /*footer*/
+
+    .footer-section {
+        padding: 100px 0;
+    }
+    .footer-container {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 0;
+        margin-left: auto;
+        max-width: 1158px;
+    }
+    .box {
+        margin-right: 120px;
+    }
+    .footer-social-title {
+        text-align: left;
+        margin-left: 80px;
+    }
+    .subscribe-form {
+        margin-left: 80px;
+        gap: 24px;
+    }
+
+    /*boody*/
+
+
+    .section-order {
+        max-width: 1440px;
+        height: 600px;
+        padding: 188px 0;
+    }
+
+    .index-heading {
+        margin-bottom: 48px;
+    }
+    .section-index {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 24px;
+    }
+    .li-index {
+        display: block;
+        gap: 8px;
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .feature-icon {
+        background-color: var(--light-color);
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .index-heading-two {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--dark-color);
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    .third-section {
+        display: block;
+        padding-top: 0;
+    }
+    .list-studio {
+        display: flex;
+        gap: 24px;
+    }
+
+    .li-index-two {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+    .team-list-studio {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        flex-basis: calc((100% - 72px) / 4);
+        padding-left: 0;
+    }
+
+    .portfolio-section {
+        padding: 96px 0 120px 0;
+    }
+
+    .portfolio-button-list {
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+
+    .portfolio-foto-list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-item {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+
+
+
+
+
 }
